@@ -134,7 +134,7 @@ Now we'll write migrations to create the remaining two tables from the schema de
 Spec files have been provided that describe the expectations for these two tables.  At this point the tests for these tables fail, and we can run them to see the expectations for each table's column types and names.
 
 ```
-$ bundle exec rake generate:migration NAME=create_people
+$ bundle exec rake db:new_migration[create_people]
 ```
 *Figure 7*.  Executing the rake task for generating a migration to create the people table.
 
